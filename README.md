@@ -33,3 +33,5 @@ What it sets up
 * Postgres gem (for making Ruby talk to SQL databases)
 
 It should take about 30 minutes for everything to install, depending on your machine.
+
+This was forked from Thoughbot(see https://github.com/thoughtbot/laptop)  and basterdized for our own env. Thanks Thoughtbot!
