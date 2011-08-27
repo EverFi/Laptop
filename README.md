@@ -14,7 +14,7 @@ OR Install XCode
 
 Then, run this one-liner:
 
-    bash < <(curl -s https://raw.github.com/gist/1174165/2b2c203ea39a3b4ca04fddf3dab73f7ee179cc89/setup_dev_env.sh)
+    bash < <(curl -s https://raw.github.com/EverFi/Laptop/master/setup_dev_env.sh)
 
 What it sets up
 ---------------
