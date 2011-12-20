@@ -44,3 +44,6 @@ echo "Installing the Taps gem to push and pull SQL databases between development
 
 echo "Installing the pg gem to talk to Postgres databases ..."
 env ARCHFLAGS="-arch x86_64" gem install pg --no-rdoc --no-ri
+
+echo "Installing pow for serving apps. Symlink apps into ~/.pow to access with http://<appname>.dev"
+  curl get.pow.cx | sh
