@@ -21,8 +21,8 @@ echo "Installing ImageMagick, good for cropping and re-sizing images ..."
   brew install imagemagick
 
 echo "Installing RVM (Ruby Version Manager) ..."
-  curl -s https://rvm.beginrescueend.com/install/rvm -o rvm-installer ; chmod +x rvm-installer ; ./rvm-installer --version latest
-  echo "[[ -s '/Users/`whoami`/.rvm/scripts/rvm' ]] && source '/Users/`whoami`/.rvm/scripts/rvm'" >> ~/.bash_profile
+  curl -L get.rvm.io | bash -s stable
+  echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
   source ~/.bash_profile
 
 
