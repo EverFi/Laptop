@@ -30,6 +30,9 @@ echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
   rvm install 1.9.3
   rvm use 1.9.3
 
+echo "Disabling RI and RDOC by default"
+  echo 'gem: --no-ri --no-rdoc' >> ~/.gemrc
+
 echo "Installing Bundler for managing Ruby libraries ..."
   gem install bundler --no-rdoc --no-ri
 
