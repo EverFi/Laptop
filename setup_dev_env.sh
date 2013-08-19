@@ -10,6 +10,8 @@ echo "Copying public key to clipboard. Paste it into your Github account ..."
 echo "Installing Homebrew, a good OS X package manager ..."
   ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
   brew update
+echo "Install git"
+  brew install git
 
 echo "Installing Postgres, a good open source relational database ..."
   brew install postgres --no-python
