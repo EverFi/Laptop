@@ -20,15 +20,19 @@ echo "Installing ack, a good way to search through files ..."
 echo "Installing ImageMagick, good for cropping and re-sizing images ..."
   brew install imagemagick
 
-echo "Installing RVM (Ruby Version Manager) ..."
-  curl -L get.rvm.io | bash -s stable
-  echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
+#echo "Installing RVM (Ruby Version Manager) ..."
+#  curl -L get.rvm.io | bash -s stable
+#  echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
+#  source ~/.bash_profile
+echo "Installing rbenv"
+  brew install rbenv
+  brew install ruby-build
+  echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
   source ~/.bash_profile
 
-
-echo "Installing Ruby 1.9.3 stable and making it the default Ruby ..."
-  rvm install 1.9.3
-  rvm use 1.9.3
+echo "Installing ruby!"
+  rbenv install 2.0.0-p247
+  rbenv global 2.0.0-p247
 
 echo "Disabling RI and RDOC by default"
   echo 'gem: --no-ri --no-rdoc' >> ~/.gemrc
