@@ -20,7 +20,7 @@ echo "Installing ack, a good way to search through files ..."
   brew install ack
 
 echo "Installing ImageMagick, good for cropping and re-sizing images ..."
-  brew install imagemagick
+  brew install ghostscript imagemagick
 
 #echo "Installing RVM (Ruby Version Manager) ..."
 #  curl -L get.rvm.io | bash -s stable
